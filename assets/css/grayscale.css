@@ -1,0 +1,664 @@
+/*!
+ * Start Bootstrap - Grayscale v5.0.3 (https://startbootstrap.com/template-overviews/grayscale)
+ * Copyright 2013-2018 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-grayscale/blob/master/LICENSE)
+ */
+
+#mainNav {
+  min-height: 56px;
+  background-color: #ffffffc7;
+}
+
+#mainNav .navbar-toggler {
+  font-size: 80%;
+  padding: 0.75rem;
+  color: #0033cc;
+  border: 1px solid #0033cc;
+}
+
+#mainNav .navbar-toggler:focus {
+  outline: none;
+}
+
+#mainNav .navbar-brand {
+  color: #161616;
+  font-weight: 700;
+  padding: .9rem 0;
+}
+
+#mainNav .navbar-nav .nav-item:hover {
+  color: fade(white, 80%);
+  outline: none;
+  background-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+#mainNav .navbar-nav .nav-item:active, #mainNav .navbar-nav .nav-item:focus {
+  outline: none;
+  background-color: transparent;
+}
+
+@media (min-width: 992px) {
+  #mainNav {
+    padding-top: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+    background-color: transparent;
+    -webkit-transition: background-color 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+  }
+  #mainNav .navbar-brand {
+    padding: .5rem 0;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  #mainNav .nav-link {
+    -webkit-transition: none;
+    transition: none;
+    padding: 2rem 1.5rem;
+    color: rgba(47, 55, 59, 1);
+  }
+  #mainNav .nav-link:hover {
+    color: rgba(0, 51, 204, 1);
+  }
+  #mainNav .nav-link:active {
+    color: white;
+  }
+  #mainNav.navbar-shrink {
+    background-color: #fff;
+  }
+  #mainNav.navbar-shrink .navbar-brand {
+    color: #161616;
+  }
+  #mainNav.navbar-shrink .nav-link {
+    color: #161616;
+    padding: 1.5rem 1.5rem 1.25rem;
+    border-bottom: 0.25rem solid transparent;
+  }
+  #mainNav.navbar-shrink .nav-link:hover {
+    color: #0033cc;
+  }
+  #mainNav.navbar-shrink .nav-link:active {
+    color: #467370;
+  }
+  #mainNav.navbar-shrink .nav-link.active {
+    color: #0033cc;
+    outline: none;
+    border-bottom: 0.25rem solid #0033cc;
+  }
+}
+
+.masthead {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 35rem;
+  padding: 15rem 0;
+  /* background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.1)), color-stop(75%, rgba(22, 22, 22, 0.5)), to(#161616)), url("../img/fnd-01.jpg");*/
+  /*background: linear-gradient(to bottom,rgba(255, 255, 255, 0.44) 10%,rgba(255, 255, 255, 0.46) 10%,rgba(51, 51, 51, 0.32) 30%,rgba(66, 68, 70, 0.25) 70%,#00529238 100%),url(../img/fnd-01.jpg);*/
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+.masthead h1 {
+  font-family: 'Varela Round';
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.8rem;
+  /* background: -webkit-linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.3)); */
+  -webkit-text-fill-color: white;
+  -webkit-background-clip: text;
+}
+
+.masthead h2 {
+  max-width: 21rem;
+  font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+  .masthead h1 {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .masthead {
+    height: 100vh;
+    padding: 0;
+  }
+  .masthead h1 {
+    font-size: 5.5rem;
+    line-height: 6.5rem;
+    letter-spacing: 0.8rem;
+  }
+  .masthead h2 {
+    max-width: 30rem;
+    font-size: 1.25rem;
+  }
+}
+
+.btn {
+  -webkit-box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+  padding: 1.25rem 2rem;
+  font-family: 'Varela Round';
+  font-size: 80%;
+  text-transform: uppercase;
+  letter-spacing: .15rem;
+  border: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover,#mainNav .navbar-nav .nav-item:hover {
+  transform: scale(1.2, 1.2);
+}
+
+.btn-primary {
+  background-color: #0033cc;
+}
+
+.btn-primary:hover {
+  background-color: #0033cc;
+}
+
+.btn-primary:focus {
+  background-color: #005598;
+  color: white;
+}
+
+.btn-primary:active {
+  background-color: #0033cc !important;
+}
+
+.about-section {
+  padding-top: 5rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(#161616), color-stop(75%, rgba(22, 22, 22, 0.9)), to(rgba(22, 22, 22, 0.8)));
+  background: linear-gradient(to bottom, #0c205a 0%, rgba(12, 32, 90, 1) 26.5rem, rgb(255, 255, 255) 26.5rem, rgba(228, 227, 235, 0.9) 100%);
+}
+.about-section p {
+  margin-bottom: 5rem;
+}
+
+.projects-section, .apps-section {
+  padding: 5rem 0;
+}
+
+.projects-section .featured-text {
+  padding: 2rem;
+}
+
+@media (min-width: 992px) {
+  .projects-section .featured-text {
+    padding: 0 0 0 2rem;
+    border-left: 0.5rem solid #0033cc;
+  }
+}
+
+.projects-section .project-text {
+  padding: 3rem;
+  font-size: 90%;
+}
+
+@media (min-width: 992px) {
+  .projects-section .project-text {
+    padding: 5rem;
+  }
+  .pad-0 {
+    padding: 0rem!important;
+  }
+  .projects-section .project-text hr {
+    border-color: #63bafd;
+    border-width: .25rem;
+    width: 30%;
+  }
+}
+
+.signup-section {
+  padding: 10rem 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.1)), color-stop(75%, rgba(22, 22, 22, 0.5)), to(#161616)), url("../img/bg-signup.jpg");
+  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url("../images/home/img-03.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+.signup-section .form-inline input {
+  -webkit-box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+  padding: 1.25rem 2rem;
+  height: auto;
+  font-family: 'Varela Round';
+  font-size: 80%;
+  /* text-transform: uppercase; */
+  letter-spacing: 0.15rem;
+  border: 0;
+  width: 100%;
+}
+
+.contact-section {
+  padding: 5rem 0 0;
+}
+
+.contact-section .card {
+  border: 0;
+  border-bottom: 0.25rem solid #0033cc;
+}
+
+.contact-section .card h4 {
+  font-size: 0.8rem;
+  font-family: 'Varela Round';
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+}
+
+.contact-section .card hr {
+  border-color: #0033cc;
+  border-width: 0.25rem;
+  width: 3rem;
+}
+
+.contact-section .social {
+  margin-top: 5rem;
+}
+
+.contact-section .social a {
+  text-align: center;
+  height: 3rem;
+  width: 3rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 100%;
+  line-height: 3rem;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.contact-section .social a:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.contact-section .social a:active {
+  color: #fff;
+}
+
+body {
+  font-family: 'Nunito';
+  letter-spacing: 0.0625em;
+}
+
+a {
+  color: #0033cc;
+}
+
+a:focus, a:hover {
+  text-decoration: none;
+  color: #050044;
+}
+
+.bg-black {
+  background-color: #161616 !important;
+}
+
+.bg-primary {
+  background-color: #0033cc !important;
+}
+
+.text-primary {
+  color: #0033cc !important;
+}
+
+footer {
+  padding: 5rem 0 2rem;
+}
+
+.text-white-50 {
+    color: rgba(255, 255, 255, 0.9)!important;
+}
+
+/* Create a simple white box, and add the shadow for the initial state */
+.box {
+  position: relative;
+  display: inline-block;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Create the hidden pseudo-element */
+/* include the shadow for the end state */
+.box::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transition: opacity 0.3s ease-in-out;
+}
+
+.box:hover {
+  transform: scale(1.2, 1.2);
+}
+
+/* Fade in the pseudo-element with the bigger shadow */
+.box:hover::after {
+  opacity: 1;
+}
+
+
+/**ANIMACION PARA TEXTO DE BANNER**/
+
+/*Texto Principal*/
+.ml1 {
+  font-weight: 500;
+  font-size: 3.5em;
+}
+
+.ml1 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+.ml1 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+}
+
+.ml1 .line {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  background-color: #fff;
+  transform-origin: 0 0;
+}
+
+.ml1 .line1 { top: 0; }
+.ml1 .line2 { bottom: 0; }
+
+/*Texto Secundario*/
+.ml11 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.5em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+}
+
+.ml11 .line {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 3px;
+  background-color: #fff;
+  transform-origin: 0 50%;
+}
+
+.ml11 .line1 { 
+  top: 0; 
+  left: 0;
+}
+
+.ml11 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+/*Estilo Animación Botón*/
+.ml8 .circle-dark {
+  width: 145px;
+  height: 60px;
+  background: #0033cc;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+/*Estilo Linea*/
+hr.line-title {
+  max-width: 50px;
+  border-width: 3px;
+  border-color: #0033cc;
+}
+
+hr.light {
+  border-color: #63bafd;
+}
+
+/*Services Styles*/
+.portfolio-item {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  max-width: 530px;
+  margin: auto auto 1rem;
+}
+
+.portfolio-item .caption {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(8, 10, 12, 0.6);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.portfolio-item .caption .caption-content {
+  color: #fff;
+  margin: auto 2rem 2rem;
+}
+
+.portfolio-item .caption .caption-content h2 {
+  font-weight: bold;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+/* .portfolio-item .caption .caption-content p {
+  font-family: 'Source Sans Pro';
+  font-weight: 300;
+  font-size: 1.2rem;
+} */
+
+@media (min-width: 992px) {
+  .portfolio-item {
+    max-width: none;
+    margin: 0;
+  }
+  .portfolio-item .caption {
+    -webkit-transition: -webkit-clip-path 0.25s ease-out, background-color 0.7s;
+    transition: clip-path 0.25s ease-out, background-color 0.7s;
+    -webkit-clip-path: inset(0px);
+    clip-path: inset(0px);
+  }
+  .portfolio-item .caption .caption-content {
+    width: inherit;
+    -webkit-transition: opacity 0.25s;
+    transition: opacity 0.25s;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-bottom: 5rem;
+  }
+  .portfolio-item img {
+    -webkit-transition: -webkit-clip-path 0.25s ease-out;
+    /* transition: clip-path 0.25s ease-out!important; */
+    -webkit-clip-path: inset(-1px);
+    clip-path: inset(-1px);
+  }
+  .portfolio-item:hover img {
+    -webkit-clip-path: inset(2rem);
+    clip-path: inset(2rem);
+  }
+  .portfolio-item:hover .caption {
+    background-color: rgba(12, 32, 90, 0.95);
+    -webkit-clip-path: inset(2rem);
+    clip-path: inset(2rem);
+  }
+}
+
+/*Scroll to Top Styles*/
+.scroll-to-top {
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  display: none;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  color: white;
+  background: rgba(0, 51, 204, 0.5);
+  line-height: 50px;
+}
+
+.scroll-to-top:focus, .scroll-to-top:hover {
+  color: white;
+}
+
+.scroll-to-top:hover {
+  background: #0033cc;
+}
+
+.scroll-to-top i {
+  font-weight: 800;
+}
+
+.text-img-unsplash {
+  color: #ffffff54;
+  font-size: 10px;
+}
+
+/*Textarea style*/
+.msjtxta {
+  padding: 1.25rem 2rem;
+  font-size: 80%;
+  margin-bottom: 20px;
+  width: 100%!important;
+  font-family: "Varela Round";
+  letter-spacing: 0.1rem;
+}
+
+/*Responsive About*/
+@media (max-width: 767px) {
+  .about-section p {
+    font-size: 14px;
+    margin-bottom: 2.5rem;
+  }
+
+  .imgmoreus {
+    max-height: 25rem;
+    overflow: hidden;
+  }
+
+  .ml8 .circle-dark {
+    width: 100px;
+    height: 40px;
+    border-radius: 3px;
+  }
+
+  .btn {
+    padding: .9rem 1.5rem;
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 767px) and (min-width: 514px) {
+  .masthead h1 {
+    font-size: 3.5rem;
+  }
+
+  .masthead h2 {
+    max-width: 22rem!important;
+  }
+
+  .about-section {
+    background: linear-gradient(to bottom, #0c205a 0%, rgba(12, 32, 90, 1) 25rem, rgb(255, 255, 255) 25rem, rgba(228, 227, 235, 0.9) 100%);
+  }
+}
+
+@media (max-width: 514px) {
+  .masthead h1 {
+    font-size: 1.9rem;
+  }
+
+  .masthead h2 {
+    max-width: 21rem!important;
+  }
+
+  h4 {
+    font-size: 1.2rem;
+  }
+
+  .projects-section .project-text {
+    padding: 0rem;
+    font-size: 80%;
+  }
+}
+
+@media (max-width: 992px) {
+  .text-white-50 {
+    text-align: left;
+  }
+}
+@media (max-width: 992px) and (min-width: 768px) {
+  .imgmoreus {
+    max-height: 50rem;
+    overflow: hidden;
+  }
+}
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -.05rem;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 40em) {
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
+
+/*Aplications Style*/
+
+a h2 {
+  color: #212529!important;
+}
+
+.pointer {
+  cursor: pointer;
+}
