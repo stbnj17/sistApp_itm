@@ -2,4 +2,8 @@ mi texto
 
 medio texto
 
+medio 2
+
+medio 3
+
 fin texto
